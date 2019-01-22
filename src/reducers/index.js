@@ -1,5 +1,4 @@
 export default (state, action) => {
-    console.log(action);
     switch (action.type) {
         case "SET_TECHNOLOGY":
             // Update the technology
@@ -8,8 +7,8 @@ export default (state, action) => {
             // with what comes from action.text
             return {
                 ...state,
-                tech: action.text
-            }
+                tech: action.tech
+            };
         default:
             return state;
     }
