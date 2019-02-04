@@ -9,8 +9,6 @@ function dispatchBtnAction(e) {
     // Get the data attribute set on the button, data-tech
     // Basically the button text
     const tech = e.target.dataset.tech;
-    // store.dispatch() is how you dispatch an action in Redux
-    // store.dispatch() requires an action object and nothing else
     // setTechnology is an action creator
     setTechnology(tech);
 }
