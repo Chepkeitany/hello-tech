@@ -28,4 +28,8 @@ return (
     )
 }
 
-export default connect(null, {setTechnology})(ButtonGroup);
+const mapDispatchToProps = {
+    setTechnology
+}
+
+export default connect(null, mapDispatchToProps)(ButtonGroup);
